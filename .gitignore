@@ -1,0 +1,53 @@
+# cache directories
+Thumbs.db
+*.DS_Store
+*.empty
+
+#phpstorm project files
+.idea
+
+#netbeans project files
+nbproject
+
+#eclipse, zend studio, aptana or other eclipse like project files
+.buildpath
+.project
+.settings
+
+# sass cache files
+*.sass-cache
+
+# mac deployment helpers
+# switch
+
+# yiinitializr env.lock
+/app/lib/Yiinitializr/config/env.lock
+
+# env files and testdrive database
+/app/config/env.php
+/app/data/testdrive.db
+
+# composer
+/app/lib/vendor
+composer.lock
+
+# server
+/cgi-bin
+/fcgi-bin
+/etc
+/log
+/logs
+/tmp
+/homes
+/webstat
+
+
+#custom
+/www/files
+/www/uploads
+/node_modules
+/bower_components
+/public_html/files
+/public_html/uploads
+/www/robots.txt
+/public_html/robots.txt
