@@ -1,0 +1,57 @@
+.button-with-icon {
+  overflow: hidden;
+  padding: 10px 29px;
+  background-color: white;
+  border-radius: 3px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #333;
+  display: inline-block;
+  vertical-align: top;
+  box-shadow: 0 2px 9px rgba(0, 0, 0, 0.03);
+
+  &.large {
+    padding: 18px 50px 17px;
+
+  }
+
+  &:hover {
+
+    .text {
+      transform: translateY(100%);
+      opacity: 0;
+      transition-delay: 0s;
+    }
+
+    .wrap-icon {
+      transform: translateX(-50%) scale(1.8);
+      left: 50%;
+      transition-delay: .2s;
+    }
+
+  }
+
+  .text {
+    padding-left: 5px;
+    display: inline-block;
+    transition: all .2s ease-in-out .2s;
+  }
+
+  .wrap-icon {
+    position: relative;
+    display: inline-block;
+    left: 0;
+    width: 14px;
+    height: 17px;
+    transition: all ease-in-out .2s;
+    &.hack-position {
+      height: 13px;
+    }
+
+    svg {
+
+      //width: 17px;
+      height: 18px;
+    }
+  }
+}

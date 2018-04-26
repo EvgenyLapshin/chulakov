@@ -1,0 +1,1 @@
+var kupavnaSearch=function(){var a=function(){var a=$("#search-text").val();""!==a&&$(".search-mark .card-content").mark(a)};return{init:function(){a()}}}();$(document).ready(function(){kupavnaSearch.init()});

@@ -1,0 +1,33 @@
+.manager-widget {
+  padding-top: 3px;
+  padding-left: 20px;
+  padding-right: 10px;
+
+  .title {
+    margin-bottom: 20px;
+    overflow: hidden;
+
+    img {
+      float: left;
+      margin-right: 17px;
+    }
+  }
+
+  .text {
+    overflow: hidden;
+  }
+  .phone {
+    padding-top: 43px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #4c4c4c;
+  }
+
+  .anchor {
+    font-weight: 500;
+  }
+
+  .message {
+    line-height: 16px;
+  }
+}

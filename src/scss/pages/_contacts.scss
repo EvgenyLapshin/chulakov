@@ -1,0 +1,137 @@
+.contacts-address {
+  position: absolute;
+  box-shadow: 0 2px 9px rgba(0, 0, 0, 0.03);
+  background-color: #fff;
+  // width: 100%;
+
+  & > div {
+    padding: 31px 40px 32px;
+    &:nth-child(2) {
+      padding-bottom: 13px;
+      .title {
+        margin-bottom: 9px;
+      }
+    }
+  }
+
+  .title {
+    color: #333;
+    font-size: 26px;
+    font-weight: 500;
+    margin-bottom: 19px;
+  }
+
+  .red {
+    background-color: #f92534;
+    & * {
+      color: #fff;
+    }
+
+    p {
+      max-height: 72px;
+      overflow: hidden;
+    }
+  }
+
+  .item {
+    font-size: 16px;
+    line-height: 16px;
+    margin-bottom: 19px;
+
+    p {
+      display: inline;
+    }
+
+    span {
+      font-size: 19px;
+      line-height: 35px;
+      font-weight: 700;
+      display: block;
+
+      a {
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+.contacts-address-wrap {
+  position: relative;
+  z-index: 1;
+  flex: 0 0 463px;
+  min-height: 290px;
+  max-width: 463px;
+}
+
+.contacts-managers {
+  width: 620px;
+  margin: 0 auto;
+  box-shadow: 0 2px 9px rgba(0, 0, 0, 0.03);
+  background-color: #fff;
+  padding: 37px 62px 0;
+  opacity:0;
+  .content {
+    margin-bottom: 45px;
+  }
+
+  .title {
+    color: #333;
+    font-size: 26px;
+    font-weight: 500;
+    margin-bottom: 27px;
+    line-height: 25px;
+  }
+
+  ul {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    list-style-type: none;
+    color: #333;
+    margin: 0;
+    padding: 0;
+
+    li {
+      margin-bottom: 11px;
+    }
+  }
+
+  .show-btn {
+    margin-left: -62px;
+    margin-right: -62px;
+  }
+
+}
+
+.contacts-managers-wrap {
+  flex: 1 0 auto;
+  height: 0;
+  z-index: 1;
+}
+
+.contacts-map {
+  height: 472px;
+  width: 100%;
+  background-color: #fff;
+  margin:43px 0;
+}
+
+.contacts-download {
+  position: relative;
+  margin-left: 94px;
+
+  svg {
+    left: -43px;
+    top: -5px;
+    position: absolute;
+  }
+}
+
+ymaps[class*=balloon-pane] {
+  margin-left: 90px;
+  margin-top: 30px;
+}
+
+ymaps[class*=balloon__tail] {
+  display: none;
+}

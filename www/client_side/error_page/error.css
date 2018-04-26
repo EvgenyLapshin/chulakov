@@ -1,0 +1,39 @@
+html {
+  margin: auto;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.error-page {
+  background-color: #000 !important;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: 50% 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin: 0;
+  font-family: Roboto, sans-serif;
+}
+
+.error-page__layout {
+  display: block;
+  text-align: center;
+}
+
+.error-page__message {
+  text-transform: uppercase;
+  font-size: 80px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.error-page__link {
+  font-size: 18px;
+}
+
+.error-page__link a {
+  color: #fff;
+}

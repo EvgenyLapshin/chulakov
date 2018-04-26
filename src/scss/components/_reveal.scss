@@ -1,0 +1,23 @@
+.reveal {
+  overflow-y: visible;
+
+  .heading {
+    position: relative;
+    margin: -30px -35px 50px;
+    padding: 19px 80px 18px 50px;
+    background-color: #262d2e;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 500;
+  }
+
+  &.expanded {
+    padding: 0;
+  }
+  &.large {
+    width: 780px;
+  }
+}
+body:not(.touch).is-reveal-open {
+  margin-right: 17px;
+}

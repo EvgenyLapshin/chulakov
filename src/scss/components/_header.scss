@@ -1,0 +1,24 @@
+h1 {
+  text-transform: uppercase;
+}
+
+h2, h3, h4, h5, h6 {
+  text-transform: none;
+}
+
+h2 {
+  font-weight: 500;
+}
+
+.extend_h1 {
+  @extend h1;
+}
+
+.extend_h2 {
+  @extend h2;
+}
+
+.extend_h4 {
+  @extend h4;
+  font-size: rem-calc(16);
+}

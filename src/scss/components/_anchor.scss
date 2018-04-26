@@ -1,0 +1,50 @@
+a, .anchor {
+  text-decoration: none;
+  position: relative;
+  color: $anchor-color;
+
+  &:after {
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 1px;
+    bottom: 0;
+    color: $anchor-color-hover;
+
+    content: '';
+  }
+}
+
+.anchor {
+  &:after {
+    background-color: $anchor-color;
+  }
+
+  &:hover {
+    color: $anchor-color-hover;
+
+    &:after {
+      background-color: $anchor-color-hover;
+    }
+  }
+}
+
+.dark-link {
+  position: relative;
+
+  color: transparentize($white, .25);
+  text-decoration: none;
+
+  &:after {
+    background-color: transparentize($white, .25);
+  }
+
+  &:hover {
+    color: $white;
+
+    &:after {
+      background-color: $white;
+    }
+  }
+}

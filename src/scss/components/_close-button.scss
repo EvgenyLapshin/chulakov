@@ -1,0 +1,29 @@
+.close-button {
+  color: $white;
+  top: 0;
+
+  &:hover {
+    color: $input-gray;
+  }
+
+  .icon-close {
+    width: 21px;
+    height: 21px;
+  }
+}
+
+.reveal {
+  & > .close-button {
+    width: 69px;
+    height: 69px;
+    right: -69px;
+  }
+
+  .heading {
+    .close-button {
+      height: 100%;
+      right: 0;
+      width: 74px;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="23px" height="105px" viewBox="0 0 23 105" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.1 (29687) - http://www.bohemiancoding.com/sketch -->
+    <title>sklyan</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="sklyan" fill="#252626">
+            <path d="M3,93.3117107 L3,18 L20,18 L20,93.3117107 C20,98.0830525 16.1554414,102 11.5,102 C6.84455858,102 3,98.0830525 3,93.3117107 Z M23,93.3117107 L23,16.5 L23,15 L21.5,15 L1.5,15 L3.55271368e-15,15 L3.55271368e-15,16.5 L3.55271368e-15,93.3117107 C3.55271368e-15,99.7275101 5.17504926,105 11.5,105 C17.8249507,105 23,99.7275101 23,93.3117107 Z" id="Shape"></path>
+            <path d="M0,0 L23,0 L23,14 L0,14 L0,0 Z M3,3 L20,3 L20,11 L3,11 L3,3 Z" id="Combined-Shape"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,34 @@
+.service-form {
+  margin-top: 75px;
+
+  .service-form-wrap {
+    max-width: 95rem;
+    margin: 0 auto;
+  }
+
+  .service-form-inner {
+    padding-top: 45px;
+    padding-bottom: 28px;
+    background-color: #fff;
+  }
+
+  h2 {
+    margin-bottom: 42px !important;
+  }
+
+  .button {
+    margin-top: 32px;
+
+    &.button-out-form {
+      margin-top: 26px;
+      margin-bottom: 28px;
+    }
+  }
+}
+
+@media (min-width: 1300px) {
+  .service-form .service-form-wrap {
+    padding-left: 95px;
+    padding-right: 95px;
+  }
+}

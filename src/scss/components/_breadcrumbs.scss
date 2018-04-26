@@ -1,0 +1,23 @@
+.breadcrumbs {
+  font-weight: 500;
+
+  a {
+    @extend .anchor;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  li:not(:last-child)::after {
+    content: '';
+    background: transparent url('../img/icons/arrow_list.svg') 0 0 no-repeat;
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    vertical-align: top;
+    top: 7px;
+    color: #b9b9b9;
+    transform: rotate(-90deg);
+  }
+}

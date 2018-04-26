@@ -1,0 +1,378 @@
+.catalog {
+  margin-bottom: 40px;
+
+  .nav {
+  }
+
+  &.catalog-view-card {
+    margin-left: -12px;
+    margin-right: -12px;
+
+    .notice {
+      bottom: 72px;
+      right: 35px;
+    }
+  }
+}
+
+.catalog-options {
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+  font-weight: 500;
+
+  .sortable {
+    span {
+      margin-left: 13px;
+
+      &.desc {
+        svg {
+          transform: rotate(180deg);
+          top: 0;
+        }
+      }
+    }
+
+    svg {
+      margin-left: 6px;
+      width: 8px;
+      height: 8px;
+      color: #b9b9b9;
+      position: relative;
+      top: 1px;
+    }
+  }
+
+  .view-options {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    overflow: hidden;
+
+    svg {
+      display: block;
+      width: 22px;
+      height: 22px;
+    }
+  }
+
+  .view-option {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 10px;
+
+    color: transparentize(#0cb8d0, .8);
+    transition: ease-in-out .2s;
+
+    &:hover {
+      color: #28d1e8;
+    }
+
+    &.active {
+      color: #0cb8d0;
+    }
+
+  }
+
+  .select2 {
+    margin-right: 7px;
+    margin-left: 5px;
+  }
+}
+
+.catalog-header-options {
+  margin-bottom: 28px;
+}
+
+.catalog-footer-options {
+  margin-top: 50px;
+}
+
+.product-inline {
+  padding: 12px 12px 12px 35px;
+  margin-bottom: 8px;
+  background-color: white;
+  border-radius: 3px 3px 0px;
+  box-shadow: 0 3px 9px rgba(47, 47, 47, 0.04);
+  transition: box-shadow ease-in-out .2s;
+  /*overflow: hidden;*/
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  .description {
+    flex: 1 0.5 auto;
+    max-width: 739px;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-right: auto;
+  }
+
+  span {
+    display: block;
+  }
+
+  a {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .add-to-cart {
+    position: relative;
+    height: 50px;
+    flex: 0 1 50px;
+    margin-left: 19px;
+    transition: ease-in-out .2s;
+    border-radius: 3px;
+    color: #f92534;
+    outline:none;
+    cursor: pointer;
+
+    &:after {
+      content: "";
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+    }
+
+    &:hover {
+      background-color: whitesmoke;
+    }
+
+    &:active {
+      background-color: #fff;
+    }
+
+    .icon-basket {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 19px;
+      height: 19px;
+    }
+  }
+
+  .name {
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .price-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .price {
+    color: #484848;
+    line-height: 18px;
+    font-size: 16px;
+    font-weight: 500;
+    white-space: nowrap;
+
+  }
+
+  .old-price {
+    color: #484848;
+    line-height: 18px;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: line-through;
+    opacity: 0.4;
+    margin-right: 15px;
+    white-space: nowrap;
+
+  }
+
+  .label, .size {
+    opacity: 0.4;
+    color: #333;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .action {
+    text-align: right;
+  }
+
+  .price-box {
+    flex: 0 1 105px;
+  }
+
+  &.disabled {
+    .price {
+      opacity: 0.45;
+      color: #484848;
+    }
+
+    .add-to-cart {
+      color: transparentize(#aeb0b1, .13);
+      background-color: #fff;
+    }
+  }
+
+  &:hover {
+    .name {
+      text-decoration: underline;
+    }
+  }
+
+  &:not(.disabled):hover {
+    box-shadow: 0 3px 17px rgba(47, 47, 47, 0.2);
+  }
+
+  .notice {
+    position: absolute;
+    bottom: 72px;
+    padding: 20px 24px;
+    border: 3px solid #f92534;
+    background-color: #fff;
+    width: 250px;
+    height: 154px;
+    right: 15px;
+    text-align: center;
+
+    .notice__text {
+      margin-bottom: 12px;
+      color: #f92534;
+      font-weight: 700;
+    }
+
+    .notice__confirm {
+      cursor: pointer;
+      color: #000;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+}
+
+.show-count {
+  width: 64px;
+}
+
+.checkbox-tag-group {
+  margin-left: -5px;
+  margin-right: -5px;
+
+  .checkbox-tag {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
+
+.product-card {
+  display: block;
+  padding: 30px 30px 0;
+  background-color: #fff;
+  margin-bottom: 25px;
+  overflow: hidden;
+  box-shadow: 0 2px 9px rgba(0, 0, 0, 0.03);
+  transition: box-shadow ease-in-out .2s;
+
+  img {
+    display: block;
+    width: 100%;
+    margin-bottom: 18px;
+  }
+
+  .info {
+    padding-left: 4px;
+    display: flex;
+    height: 87px;
+    flex-direction: column;
+    margin-bottom: 20px;
+    overflow: hidden;
+  }
+
+  .name {
+    color: #333;
+    font-size: 16px;
+    line-height: 19px;
+    max-height: 57px;
+    font-weight: 500;
+    margin-bottom: 9px;
+  }
+
+  .size-wrap {
+    flex: 1 auto;
+    max-height: 32px;
+    overflow: hidden;
+    line-height: 16px;
+  }
+
+  .size {
+    opacity: 0.4;
+    color: #333;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .action {
+    width: calc(100% + 60px);
+    margin-left: -30px;
+    margin-right: -30px;
+    display: block;
+    padding: 14px 30px 15px 33px;
+    border-top: 1px solid transparentize(#000, .9);
+    transition: ease-in-out .2s;
+    font-weight: 500;
+  }
+
+  .icon-basket {
+    width: 19px;
+    height: 19px;
+    color: #f92534;
+    margin-right: 13px;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .price {
+    line-height: 19px;
+    vertical-align: top;
+    font-size: 16px;
+    display: inline-block;
+    color: #484848;
+  }
+
+  &.disabled {
+    .price {
+      opacity: 0.45;
+      color: #484848;
+    }
+
+    .icon-basket {
+      color: transparentize(#aeb0b1, .13);
+    }
+
+    .action {
+      cursor: default;
+    }
+  }
+
+  a {
+    &:hover {
+      .name {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &:not(.disabled):hover {
+    box-shadow: 0 3px 17px rgba(47, 47, 47, 0.2);
+
+    .action {
+      &:hover {
+        background-color: whitesmoke;
+      }
+    }
+  }
+}

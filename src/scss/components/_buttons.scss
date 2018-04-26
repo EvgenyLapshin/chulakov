@@ -1,0 +1,90 @@
+.button {
+  line-height: 1.5;
+  font-weight: 500;
+  border-radius: 3px;
+  border: 0;
+  white-space: nowrap;
+
+  &.white {
+    background-color: #fff;
+    color: #333;
+
+    &:hover {
+      background-color: #f0f0f0;
+    }
+  }
+
+  &.blue {
+    background-color: #0cb8d0;
+
+    &:hover {
+      background-color: #53cfe1;
+    }
+  }
+
+  &.red {
+    @extend .button.alert;
+    /*background-color: #f92534;
+    color: white;
+
+    &:hover {
+      background-color: #ff4855;
+    }*/
+  }
+
+  &.large {
+    padding: 15px 35px;
+  }
+
+  &.medium {
+    padding: 9.5px 22px;
+  }
+
+  &.small {
+    padding: 4px 16px 5px;
+  }
+
+  &.radial {
+    border-radius: 50%;
+    box-shadow: 0 2px 0 rgba(47, 47, 47, 0.35);
+    width: 60px;
+    height: 60px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    margin: 0;
+
+    &:hover {
+      background-color: #f2f2f2;
+    }
+  }
+
+  img {
+    width: 36px;
+    height: 36px;
+    margin-right: 15px;
+    margin-top: -4px;
+    margin-bottom: -3px;
+  }
+
+  &.disabled, &[disabled] {
+    background-color: #333;
+  }
+}
+
+.button-label-text {
+  color: #262d2e;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 18px;
+  text-transform: uppercase;
+  &.large {
+    height: 60px;
+    line-height: 60px;
+  }
+  &.float-right {
+    padding-right: 24px;
+  }
+}

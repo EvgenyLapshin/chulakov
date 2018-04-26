@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="19px" height="15px" viewBox="0 0 19 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.1 (29687) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
+        <g id="Shape-3" transform="translate(9.001218, 7.534878) rotate(-4.000000) translate(-9.001218, -7.534878) translate(0.001218, 2.034878)" stroke="#252626" stroke-width="2">
+            <path d="M0.9,11 L3.4,9.4" id="Shape"></path>
+            <path d="M7.4,7 L12.098545,4.17804508" id="Shape"></path>
+            <path d="M15.4,2.1 L18,0.5" id="Shape"></path>
+        </g>
+    </g>
+</svg>

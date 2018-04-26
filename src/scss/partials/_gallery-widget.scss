@@ -1,0 +1,130 @@
+.gallery-widget {
+  margin-bottom: 95px;
+  width: 1110px;
+
+  .heading {
+    h2 {
+      margin-bottom: 22px;
+    }
+    .text {
+      font-size: 16px;
+      margin-bottom: 30px;
+    }
+  }
+
+  .inner {
+    display: flex;
+    box-shadow: 0 2px 9px rgba(0, 0, 0, 0.03);
+
+    &:first-child {
+      padding-top: 13px;
+    }
+  }
+
+  .slider-content {
+    position: relative;
+    flex: 0 0 739px;
+    width: 739px;
+    height: 493px;
+    overflow: hidden;
+  }
+
+  .thumbs-container {
+    position: relative;
+    background-color: #fff;
+    flex: 1 0;
+    padding: 40px 30px 41px 51px;
+    display: flex;
+    align-self: stretch;
+    height: 493px;
+
+    &:before, &:after {
+      position: absolute;
+      left: 51px;
+      right: 95px;
+      height: 1px;
+      background-color: rgba(0, 0, 0, .08);
+      content: '';
+    }
+
+    &:before {
+      top: 40px;
+    }
+
+    &:after {
+      bottom: 40px;
+    }
+  }
+
+  .thumbs {
+    position: relative;
+    padding-right: 49px;
+    width: 100%;
+  }
+
+  .slick-dots {
+    margin: 0;
+    padding-top: 26px;
+    padding-bottom: 16px;
+    display: block !important;
+    list-style-type: none;
+
+    li {
+      float: left;
+      width: 113px;
+      height: 67px;
+      margin-bottom: 10px;
+      padding-left: 6px;
+      padding-right: 7px;
+      position: relative;
+      overflow: hidden;
+
+      &:before {
+        position: absolute;
+        content: '';
+        left: 6px;
+        right: 7px;
+        bottom: -2px;
+        height: 2px;
+        transition: bottom ease-in-out .2s;
+        background-color: $color-red;
+      }
+      img {
+        display: block;
+        cursor: pointer;
+      }
+
+      &.slick-active {
+        &:before {
+          bottom: 0;
+        }
+      }
+    }
+  }
+
+  .slick-arrow {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    cursor: pointer;
+    width: 140px;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+
+    &.slick-prev {
+      left: 0;
+    }
+
+    &.slick-next {
+      right: 0;
+    }
+  }
+
+  .icon-arrow {
+    width: 23px;
+    height: 23px;
+    color: #ff0008;
+  }
+}

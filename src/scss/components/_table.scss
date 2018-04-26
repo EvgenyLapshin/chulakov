@@ -1,0 +1,39 @@
+table {
+  border-radius: 0;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 500;
+  color: transparentize(#333, .2);
+
+  tr {
+    // If stripe is set to even, darken the even rows.
+    @if $table-stripe == even {
+      &:nth-child(even) {
+        th:first-child {
+          border-top-left-radius: 5px;
+          border-bottom-left-radius:5px;
+        }
+
+        th:last-child {
+          border-top-right-radius:5px;
+          border-bottom-right-radius:5px;
+        }
+      }
+    }
+
+      // If stripe is set to odd, darken the odd rows.
+    @else if $table-stripe == odd {
+      &:nth-child(odd) {
+        th:first-child {
+          border-top-left-radius: 5px;
+          border-bottom-left-radius:5px;
+        }
+
+        th:last-child {
+          border-top-right-radius:5px;
+          border-bottom-right-radius:5px;
+        }
+      }
+    }
+  }
+}

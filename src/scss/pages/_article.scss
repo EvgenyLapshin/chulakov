@@ -1,0 +1,39 @@
+.article-back {
+  margin-bottom: 30px;
+}
+
+.article-info {
+  color: #333;
+  font-size: 0;
+
+  & > * {
+    font-size: 16px;
+    display: inline-block;
+  }
+
+  .date {
+    margin-right: 34px;
+  }
+
+  .visits-count {
+    .wrap-icon {
+      display: inline-block;
+      vertical-align: top;
+      position: relative;
+      height: 24px;
+      width: 20px;
+      margin-right: 2px;
+    }
+
+    svg {
+      width: 20px;
+      height: 20px;
+
+      color: #aeb0b1;
+    }
+  }
+}
+
+.article-content {
+  margin-bottom: 4.7em;
+}

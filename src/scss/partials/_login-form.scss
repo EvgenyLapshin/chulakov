@@ -1,0 +1,65 @@
+.reveal.login-form {
+  width: 371px;
+  padding: 0;
+  display: flex;
+
+  .registration {
+    background-color: map_get($foundation-palette, alert);
+    width: 411px;
+    padding: 40px 68px 49px;
+    .title {
+      font-size: 24px;
+      color: $white;
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: 700;
+      margin-bottom: 17px;
+      span {
+        vertical-align: middle;
+      }
+      svg {
+        color: #a6171b;
+        height: 18px;
+        width: 18px;
+        vertical-align: middle;
+      }
+    }
+    .description {
+      margin-bottom: 46px;
+      font-size: 14px;
+      line-height: 18px;
+      text-align: center;
+      color: $white;
+    }
+  }
+
+  .login {
+    background-color: #fff;
+    width: 371px;
+    padding: 40px 46px 49px;
+    .title {
+      font-size: 24px;
+      color: #4c4c4c;
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: 700;
+      margin-bottom: 17px;
+      span {
+        vertical-align: middle;
+      }
+      svg {
+        color: #0cb8d0;
+        height: 22px;
+        width: 22px;
+        vertical-align: middle;
+      }
+    }
+    .description {
+      margin-bottom: 46px;
+      font-size: 14px;
+      line-height: 18px;
+      text-align: center;
+      color: #4c4c4c;
+    }
+  }
+}

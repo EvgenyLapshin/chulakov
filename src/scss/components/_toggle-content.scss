@@ -1,0 +1,42 @@
+.toggle-content {
+  .content {
+    overflow: hidden;
+  }
+
+  .show-btn {
+    margin-left: -35px;
+    margin-right: -35px;
+    height: 51px;
+    border-top: 1px solid transparentize($black, .9);
+    text-align: center;
+    color: #333;
+    font-size: 18px;
+    line-height: 44px;
+    font-weight: 500;
+    display: none;
+    transition: ease-in-out .2s;
+    cursor: pointer;
+
+    svg {
+      width: 10px;
+      height: 10px;
+      color: #333;
+      margin-right: 10px;
+      transform: translateY(-1px);
+    }
+
+    &.show {
+      display: block;
+    }
+
+    &:hover {
+      background: transparentize(#333, .9);
+    }
+  }
+
+  &.open {
+    .show-btn svg {
+      transform: rotate(180deg) translateY(1px);
+    }
+  }
+}

@@ -1,0 +1,181 @@
+.accordion {
+  margin: 0 -8px;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+
+  li {
+    flex: 0 0 84px;
+    margin: 0 8px;
+  }
+
+  .heading {
+    position: relative;
+    margin-bottom: 38px;
+  }
+
+  .date {
+    text-align: center;
+    width: 84px;
+  }
+
+  .month {
+    color: #4c4c4c;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+
+  .day {
+    color: #7b8184;
+    font-size: 52px;
+    font-weight: 500;
+    line-height: 30px;
+    transition: color ease-in-out .2s;
+  }
+
+  .title {
+    position: absolute;
+    left: 109px;
+    top: 40px;
+    color: #4c4c4c;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 28px;
+    opacity: 0;
+    width: 350px;
+  }
+
+  .toggle-btn {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    width: 84px;
+    display: flex;
+    opacity: 1;
+    pointer-events: auto;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #fbfbfb;
+    }
+
+    svg {
+      width: 26px;
+      height: 26px;
+      color: #e4e4e4;
+    }
+  }
+
+  .card-content {
+    width: 0;
+    opacity: 0;
+  }
+
+  li.active {
+    flex: 1 0 0;
+
+    .date {
+      padding-left: 25px;
+    }
+
+    .day {
+      color: #f63137;
+    }
+
+    .title {
+      opacity: 1;
+      top: 22px;
+    }
+
+    .toggle-btn {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .card-content {
+      width: auto;
+      opacity: 1;
+    }
+  }
+
+  li.rotate-arrow {
+    svg {
+      transform: rotate(180deg);
+    }
+  }
+
+  li.accent {
+    .toggle-btn {
+      background-color: #f63137;
+      color: transparentize(#3f0510, 0.55);
+      font-size: 34px;
+      font-weight: 500;
+
+      span {
+        transform: rotate(-90deg);
+      }
+    }
+  }
+
+  .card {
+    height: 172px;
+    position: relative;
+    background-color: #fff;
+
+    &:after {
+      position: absolute;
+      left: 0;
+      bottom: -10px;
+      right: 0;
+      height: 2px;
+      opacity: 0.05;
+      background-color: #080808;
+      content: '';
+    }
+  }
+
+  .card-content {
+    height: 100%;
+
+    a {
+      font-size: 14px;
+    }
+  }
+
+  .content {
+    &, * {
+      line-height: 24px;
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+    max-height: 72px;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+
+  &.init {
+    li {
+      transition: ease-in-out .2s;
+    }
+
+    .date {
+      transition: padding ease-in-out .2s;
+    }
+
+    .title {
+      transition: opacity ease-in-out .2s, top ease-in-out .2s;
+    }
+
+    .toggle-btn {
+      transition: ease-in-out .2s;
+    }
+  }
+
+}

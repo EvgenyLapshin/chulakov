@@ -1,0 +1,82 @@
+@charset "UTF-8";
+/*!
+Theme Name: Kupavna-Reaktiv
+Version: 1.0
+Author: HtmlMak
+Description: Шаблон для сайта магазина Kupavna-Reaktiv
+Author email: htmlmak@gmail.com
+*/
+@import "foundation/foundation";
+@import "../../bower_components/motion-ui/motion-ui";
+
+@include foundation-everything($flex: true);
+@include motion-ui-transitions();
+
+@import "functions";
+
+/* Components */
+@import "../../bower_components/select2/dist/css/select2";
+//@import "../../bower_components/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css";
+//@import "../../bower_components/slick-carousel/slick/slick.css";
+@import "components/awesome-bootstrap-checkbox";
+@import "components/slick-native";
+@import "components/select2";
+@import "components/checkbox";
+@import "components/radio";
+@import "components/forms";
+@import "components/cart-widget";
+@import "components/catalog-nav";
+@import "components/anchor";
+@import "components/breadcrumbs";
+@import "components/header";
+@import "components/tabs";
+@import "components/card";
+@import "components/pagination";
+@import "components/button-with-icon";
+@import "components/buttons";
+@import "components/filter";
+@import "components/slider";
+@import "components/icons";
+@import "components/mark";
+@import "components/table";
+@import "components/slick";
+@import "components/accordion";
+@import "components/tooltip";
+@import "components/jquery.custom-scrollbar";
+@import "components/dots";
+@import "components/reveal";
+@import "components/close-button";
+@import "components/buy-form.scss";
+@import "components/toggle-content";
+
+/* Partials*/
+@import "partials/main";
+@import "partials/header";
+@import "partials/footer";
+@import "partials/content";
+@import "partials/new-answer";
+@import "partials/search-filed";
+@import "partials/manager-widget";
+@import "partials/gallery-widget";
+@import "partials/service-form";
+@import "partials/pre-packing-product";
+@import "partials/login-form";
+
+/* Pages */
+@import "pages/article";
+@import "pages/news";
+@import "pages/vacancies";
+@import "pages/catalog";
+@import "pages/search";
+@import "pages/product";
+@import "pages/error-page";
+@import "pages/cart";
+@import "pages/contacts";
+@import "pages/lk";
+@import "pages/about";
+@import "pages/home";
+@import "pages/services/precursory";
+@import "pages/services/stock";
+@import "pages/services/packaging";
+@import "pages/services/delivery";
+@import "pages/services/packaging-example";

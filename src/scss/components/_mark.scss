@@ -1,0 +1,23 @@
+mark {
+  position: relative;
+  z-index: 0;
+
+  background-color: #f92534;
+  color: inherit;
+  margin-left: -3px;
+  padding-left: 4px;
+  padding-right: 4px;
+  margin-right: -3px;
+
+  &:after {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -3px;
+    bottom: -4px;
+    z-index: -1;
+
+    background-color: inherit;
+    content: '';
+  }
+}

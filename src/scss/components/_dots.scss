@@ -1,0 +1,32 @@
+.line-dots {
+  padding-top: 24px;
+  flex: 1 0 100%;
+  text-align: center;
+  margin: 0;
+  display: flex !important;
+  justify-content: center;
+  list-style-type: none;
+
+  li {
+    font-size: 0;
+    width: 19px;
+    height: 19px;
+    margin: 0 6px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    button {
+      display: block;
+      background-color: transparentize($black, .7);
+      border-radius: 2px;
+      width: 19px;
+      height: 4px;
+    }
+    &.slick-active {
+      button {
+        background-color: #ff0008;
+      }
+    }
+  }
+}

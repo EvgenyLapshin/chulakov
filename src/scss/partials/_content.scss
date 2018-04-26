@@ -1,0 +1,47 @@
+.content {
+  font-size: 16px;
+  color: #333;
+
+  img {
+    margin-bottom: 2.8em;
+  }
+
+  p {
+    margin-bottom: 1.625em;
+  }
+
+  &.content-margin-top {
+    margin-top: 70px;
+  }
+}
+
+.doc-attachment {
+  margin-bottom: 40px;
+  padding-left: 39px;
+  min-height: 32px;
+  position: relative;
+  font-weight: 500;
+
+  div {
+    display: flex;
+    align-items: center;
+    &:not(:last-child) {
+      margin-bottom: 18px;
+    }
+  }
+
+  svg {
+    position: absolute;
+    left: -42px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 32px;
+    height: 32px;
+  }
+}
+
+
+
+.text-normal {
+  text-transform: none;
+}

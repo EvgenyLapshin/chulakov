@@ -1,0 +1,133 @@
+.pre-packing-product {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 8px;
+  border-top: 1px solid transparentize(#ebeff1, .5);
+  padding-bottom: 8px;
+  position: relative;
+
+  .label {
+    flex: 0 0 151px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    span {
+      color: #484848;
+      font-size: 16px;
+      line-height: 18px;
+      max-height: 36px;
+      overflow: hidden;
+    }
+  }
+
+  .count {
+    flex: 0 0 124px;
+    white-space: nowrap;
+    display: flex;
+    margin-left: 38px;
+
+    .down, .up {
+      background-color: #333;
+      width: 30px;
+      font-size: 26px;
+      color: #fff;
+      cursor: pointer;
+      font-weight: 500;
+      text-align: center;
+      transition: ease-in-out .2s;
+
+      &:hover {
+        background-color: #575757;
+      }
+    }
+
+    .down {
+      border-top-left-radius: 3px;
+      border-bottom-left-radius: 3px;
+      line-height: 38px;
+    }
+
+    .up {
+      border-top-right-radius: 3px;
+      border-bottom-right-radius: 3px;
+      line-height: 40px;
+    }
+
+    input {
+      display: inline-block;
+      margin-bottom: 0;
+      height: 40px;
+      width: 64px;
+      background-color: #f7f7f7;
+      box-shadow: inset 0.5px 0.9px 8px rgba(47, 47, 47, 0.06);
+      border-radius: 0;
+      text-align: center;
+      padding: 0;
+
+      &::-webkit-inner-spin-button,
+      &::-webkit-outer-spin-button {
+        display: none;
+      }
+    }
+  }
+
+  .price-box {
+    flex: 1 1 auto;
+    padding-left: 20px;
+    color: #484848;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+  }
+
+  .discount-price {
+    padding-left: 15px;
+    opacity: 0.4;
+    flex: 1;
+    text-decoration: line-through;
+  }
+
+  .total-container {
+    padding-right: 26px;
+    flex: 1;
+    text-align: right;
+  }
+
+  .total-desc {
+    display: block;
+    opacity: .4;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .remove {
+    flex: 0 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .icon-delete {
+      width: 20px;
+      height: 20px;
+      opacity: 0.87;
+      color: #aeb0b1;
+      cursor: pointer;
+      transition: ease-in-out .2s;
+
+      &:hover {
+        color: #f92534;
+      }
+    }
+  }
+
+  #buy-form-packages > .cart-product > & {
+    border-width: 2px;
+    padding-top: 21px;
+    padding-bottom: 21px;
+    &:last-child {
+      border-bottom: 2px solid transparentize(#ebeff1, .5);
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.error-page {
+  background: #f92534;
+  color: #fff;
+
+  .code {
+    font-size: 305px;
+    font-weight: 100;
+    line-height: 240px;
+    padding-top: 50px;
+    letter-spacing: -9px;
+    margin-bottom: 19px
+  }
+
+  .description {
+    padding-left: 100px;
+    font-size: 20px;
+  }
+
+  .go-home {
+    margin-top: 254px;
+    margin-bottom: 205px;
+  }
+
+  .row {
+    position: relative;
+    background: url(/dist/img/error-page-image.png) no-repeat 268px 103px;
+  }
+
+}

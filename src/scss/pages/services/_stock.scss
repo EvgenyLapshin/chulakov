@@ -1,0 +1,93 @@
+.stock-header {
+  .red {
+    background-color: #f92534;
+    box-shadow: 0 2px 9px rgba(0, 0, 0, 0.03);
+    color: #fff;
+    padding: 54px 40px 49px 56px;
+
+    h1 {
+      color: inherit;
+      margin-bottom: 22px;
+    }
+
+    .text {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  .options {
+    margin-bottom: 160px;
+
+    h2 {
+      padding-left: 100px;
+      margin-top: -3px;
+      margin-bottom: 37px;
+    }
+
+    .item {
+      padding-left: 35px;
+      display: flex;
+      font-size: 16px;
+      line-height: 24px;
+      align-items: center;
+
+      &.item-1 {
+        margin-bottom: 32px;
+        .img {
+          padding-left: 3px;
+        }
+      }
+
+      &.item-2 {
+        margin-bottom: 24px;
+        .img {
+          padding-left: 9px;
+        }
+        .text {
+          padding-top: 17px;
+        }
+      }
+      &.item-3 {
+        .text {
+          padding-top: 19px;
+        }
+      }
+    }
+
+    .img {
+      width: 67px;
+      flex: 0 0 67px;
+    }
+  }
+}
+
+.stock-steps {
+  margin-bottom: 125px;
+
+  .img {
+    background: transparent url(/dist/img/services/stock/steps.png) 50% 0 no-repeat;
+    height: 184px;
+    margin-bottom: 30px;
+  }
+
+  .step {
+    display: flex;
+    font-size: 16px;
+    line-height: 20px;
+
+    strong {
+      font-weight: 900;
+      margin-right: 6px;
+    }
+
+    a {
+      @extend .decor;
+    }
+  }
+
+  .steps {
+    display: flex;
+    justify-content: space-between;
+  }
+}
